@@ -1,0 +1,15 @@
+{
+  "name": "minos-monorepo",
+  "private": true,
+  "workspaces": [
+    "client-game",
+    "server-api",
+    "admin-panel"
+  ],
+  "scripts": {
+    "dev:game": "npm --workspace client-game run dev",
+    "dev:api": "npm --workspace server-api run dev",
+    "dev:admin": "npm --workspace admin-panel run dev",
+    "build": "npm --workspace client-game run build && npm --workspace server-api run build && npm --workspace admin-panel run build"
+  }
+}
