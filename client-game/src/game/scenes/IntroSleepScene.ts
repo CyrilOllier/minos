@@ -32,7 +32,7 @@ export class IntroSleepScene extends Scene {
     if (this.ready) renderer.image(this.background, 0, 0, canvas.width, canvas.height);
 
     renderer.rect(this.player.x, this.player.y, this.player.width, this.player.height, '#87c7ff');
-    renderer.text('Le héros reprend conscience sous le trou d'arrivée...', 360, 40, '#f3e6b3');
+    renderer.text("Le héros reprend conscience sous le trou d'arrivée...", 360, 40, '#f3e6b3');
     renderer.text('Appuie sur Entrée pour commencer', 470, 680, '#ffffff');
     this.hud.render(this.game, this.player);
   }
