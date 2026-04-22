@@ -13,7 +13,10 @@ export class IntroSleepScene extends Scene {
 
   constructor(private readonly game: Game) {
     super();
-    this.background.src = '/src/assets/images/backgrounds/start-room-sleep-food-barrels.png';
+    this.background.src = new URL(
+      '../../assets/images/backgrounds/start-room-sleep-food-barrels.png',
+      import.meta.url
+    ).href;
     this.background.onload = () => (this.ready = true);
     this.player.x = 622;
     this.player.y = 520;
